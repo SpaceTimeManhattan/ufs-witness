@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><script>try{if(localStorage.getItem("ufs_subscribed")!=="1")document.documentElement.classList.add("gated");}catch(e){document.documentElement.classList.add("gated");}</script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>UFS Witness | Unified Field Systems LLC</title>
 <meta name="description" content="Unified Field Systems LLC: live recursive admissibility witness, public witness hashes, team and contact.">
 <link rel="icon" type="image/png" href="ufs_logo.png">
@@ -84,7 +84,24 @@ a{color:var(--cyan)}
 .foot{text-align:center;color:var(--mute);font-size:12px;margin-top:22px}
 @media(max-width:640px){.rtype{grid-template-columns:1fr}}
 .card .title{color:#fff;font-weight:700;margin:4px 0}.card .eqn{color:#bbb;font-size:.8em;margin-top:6px;line-height:1.35}.src{float:right;font-size:.75em;padding:1px 6px;border-radius:8px;border:1px solid}.srcS{color:#3de0c5}.srcC{color:#C2A990}.srcH{color:#999}
-</style></head><body><div class="screen">
+#gate{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(6,8,12,.72);backdrop-filter:blur(3px);overflow-y:auto}
+html.gated #gate{display:flex}html.gated body{overflow:hidden}html.gated #pagewrap{filter:blur(9px);pointer-events:none;user-select:none}
+#gate .gbox{background:var(--card);border:1px solid var(--gold);border-radius:16px;max-width:460px;width:100%;padding:22px;text-align:center;box-shadow:0 10px 60px rgba(0,0,0,.6);margin:auto}
+#gate img{width:100%;max-width:300px;height:auto;border-radius:8px}#gate h2{color:var(--gold);font-family:var(--font);font-size:22px;margin:14px 0 6px}#gate p{color:var(--mute);font-size:14px;margin:0 0 14px}
+#gate form,.nsgate form{display:grid;gap:10px;text-align:left}#gate label,.nsgate label{color:var(--txt);font-size:13px;display:grid;gap:4px}
+#gate input[type=text],#gate input[type=email],.nsgate input[type=text],.nsgate input[type=email]{background:#0b0d12;border:1px solid var(--line);border-radius:8px;color:var(--txt);padding:10px;font-size:16px}
+#gate .chk,.nsgate .chk{display:flex;gap:8px;align-items:flex-start}#gate button,.nsgate button{background:var(--cyan);color:#06120f;border:0;border-radius:8px;padding:12px;font-weight:700;font-size:15px;cursor:pointer}
+#gate .gerr{color:var(--orange);font-size:13px;min-height:1em}.subnote{position:fixed;right:10px;bottom:8px;z-index:50;font:11px var(--mono);color:var(--mute);opacity:.7;background:rgba(11,13,18,.8);padding:3px 8px;border-radius:6px}
+.nsgate{max-width:460px;margin:16px auto;padding:16px;border:1px solid var(--gold);border-radius:12px;background:var(--card)}.nsgate p{color:var(--mute);font-size:14px}
+</style></head><body>
+<div id="gate" role="dialog" aria-modal="true" aria-labelledby="gateh"><div class="gbox"><img src="ufs_logo.png" alt="Unified Field Systems LLC"><h2 id="gateh">Subscribe to access the Unified Field Systems witness</h2><p>Receive occasional updates on new witness records, papers and announcements from Unified Field Systems.</p>
+<form id="gform" action="https://formsubmit.co/Liat@UnifiedFieldSystems.com" method="POST"><input type="hidden" name="_subject" value="UFS: New subscriber"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<label>Name *<input type="text" name="name" required autocomplete="name"></label><label>Email *<input type="email" name="email" required autocomplete="email"></label><label>Organization (optional)<input type="text" name="organization" autocomplete="organization"></label>
+<label class="chk"><input type="checkbox" name="consent" value="yes" required><span>I agree to receive updates from Unified Field Systems</span></label><button type="submit" id="gbtn">Subscribe and enter</button><div class="gerr" id="gerr"></div></form></div></div>
+<noscript><div class="nsgate"><p>JavaScript is off, so the live witness numbers will not run. You can still subscribe for updates from Unified Field Systems:</p><form action="https://formsubmit.co/Liat@UnifiedFieldSystems.com" method="POST"><input type="hidden" name="_subject" value="UFS: New subscriber"><input type="hidden" name="_template" value="table"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+<label>Name *<input type="text" name="name" required autocomplete="name"></label><label>Email *<input type="email" name="email" required autocomplete="email"></label><label>Organization (optional)<input type="text" name="organization" autocomplete="organization"></label>
+<label class="chk"><input type="checkbox" name="consent" value="yes" required><span>I agree to receive updates from Unified Field Systems</span></label><button type="submit">Subscribe</button></form></div></noscript>
+<div id="pagewrap"><div class="screen">
 <header class="top"><a href="https://www.unifiedfieldsystems.com/"><img src="ufs_logo.png" width="1024" height="384" alt="Unified Field Systems LLC"></a>
 <a class="back" href="https://www.unifiedfieldsystems.com/">&larr; BACK TO UNIFIEDFIELDSYSTEMS.COM</a></header>
 <div class="hero"><h2>UFS FIELD WITNESS</h2><div class="tag">Live recursive admissibility witness &middot; (non-AI) pure mathematical computation</div><div class="subh">Unified Field Systems LLC &middot; Bronx, New York</div></div>
@@ -145,6 +162,7 @@ a{color:var(--cyan)}
 <button type="submit">SEND MESSAGE</button>
 <p class="fallback">Prefer email? Write to <a href="mailto:Liat@UnifiedFieldSystems.com">Liat@UnifiedFieldSystems.com</a></p></form></section>
 <p class="foot">&copy; 2026 Unified Field Systems LLC &middot; <a href="https://www.unifiedfieldsystems.com/">UnifiedFieldSystems.com</a></p>
+</div>
 </div>
 <script>
 (function(){var v=document.getElementById("institute");if(!v)return;v.muted=true;v.loop=true;v.playsInline=true;v.autoplay=true;
@@ -220,6 +238,14 @@ document.getElementById("ksr").textContent=ticks(START_SR).toLocaleString("en-US
 document.getElementById("srage").textContent="Running from 30 June 1905 \u00b7 "+civil(START_SR);document.getElementById("grage").textContent="Running from 25 November 1915 \u00b7 "+civil(START_GR);
 const km=ticks(MS0);ui.forEach(function(u){const L=u.f(k,n,orbit(k),km,u.p);u.a.textContent=fmt(L[0][1]);u.b.textContent=fmt(L[1][1]);u.c.textContent=fmt(L[2][1]);});}
 paint();setInterval(paint,80);
+(function(){var H=document.documentElement,f=document.getElementById("gform");
+function note(n){if(!n)return;var d=document.createElement("div");d.className="subnote";d.textContent="Subscribed as "+n;document.body.appendChild(d);}
+function unlock(n){try{localStorage.setItem("ufs_subscribed","1");localStorage.setItem("ufs_sub_name",n);}catch(e){}H.classList.remove("gated");note(n);}
+if(!H.classList.contains("gated")){try{note(localStorage.getItem("ufs_sub_name"));}catch(e){}}
+if(!f)return;f.addEventListener("submit",function(ev){ev.preventDefault();if(!f.reportValidity())return;var fd=new FormData(f),n=String(fd.get("name")||"").trim(),b=document.getElementById("gbtn");
+if(fd.get("_honey")){return;}b.disabled=true;b.textContent="Subscribing\u2026";var o={};fd.forEach(function(v,k){o[k]=v;});
+fetch("https://formsubmit.co/ajax/Liat@UnifiedFieldSystems.com",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(o)}).then(function(){unlock(n);}).catch(function(){unlock(n);});});})();
+
 (function(){const W="https://sexa-fin-collector2.spacetimemanhattan.workers.dev/";
 function set(id,v){var e=document.getElementById(id);if(e)e.textContent=(v==null||v==="")?"\u2026":String(v);}
 function draw(d){var seed=Number(d.seed_held||110),live=Number(d.live_rejected||0),acc=Number(d.live_accepted||0);FIN.acc=acc;FIN.rej=live;FIN.last=d.last_kill||null;

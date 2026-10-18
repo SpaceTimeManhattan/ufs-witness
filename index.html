@@ -255,4 +255,4 @@ pull();setInterval(pull,30000);})();
 
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous" onload="try{var e=document.getElementById('eq');katex.render(window.UFS_TEX,e,{displayMode:true,throwOnError:true,strict:false});}catch(x){}"></script>
-</body></html>
+<script>/*ufs-autoplay-guard*/(function(){var v=document.querySelectorAll("video");v.forEach(function(x){x.muted=true;x.loop=true;x.setAttribute("playsinline","");});function go(x){var p=x.play();if(p&&p.catch)p.catch(function(){});}if("IntersectionObserver"in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)go(e.target);});},{threshold:0.2});v.forEach(function(x){io.observe(x);});}v.forEach(go);document.addEventListener("touchstart",function(){v.forEach(function(x){if(x.paused&&x.dataset.userpaused!=="1")go(x);});},{once:true,passive:true});})();</script></body></html>

@@ -1,8 +1,8 @@
 {
  "label": "VESPAR LIVE 4h TEST - real chunk of locked PREREG mini_2026-10-17 (not a new PREREG; not a gravity claim)",
- "time_et": "2026-11-07T22:08:04-05:00",
- "run_path": "/workspace/gravity_search_bot/witness_live_4h/runs/2026-11-07T22-07-52",
- "chunk": 12,
+ "time_et": "2026-11-08T02:06:57-05:00",
+ "run_path": "/workspace/gravity_search_bot/witness_live_4h/runs/2026-11-08T02-06-45",
+ "chunk": 13,
  "SIMULATED": 10000007199,
  "COVERED": null,
  "COVERED_note": "not measured by this single-chunk pass; never mixed with SIMULATED",
